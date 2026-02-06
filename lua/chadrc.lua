@@ -39,5 +39,10 @@ M.ui = {
     theme = "vscode",
   }
 }
+M.mason = {
+    pkgs = {
+        "clangd"
+    }
+}
 
 return M

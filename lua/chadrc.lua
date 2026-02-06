@@ -6,19 +6,38 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "everblush",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
+  transparency = true,
 }
 
--- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
--- }
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+    " ▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄     ▄ ",
+    "█      █  █ █  █       █ █ ▄ █ █",
+    "█  ▄   █  █▄█  █   ▄   █ ██ ██ █",
+    "█ █▄█  █       █  █ █  █       █",
+    "█      █   ▄   █  █▄█  █       █",
+    "█  ▄   █  █ █  █       █   ▄   █",
+    "█▄█ █▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄▄█ █▄▄█",
+    "",
+  }
+}
+M.ui = {
+  tabufline = {
+    lazyload = false
+  },
+  cmp = {
+    icons = true,
+  },
+  ststusline = {
+    theme = "vscode",
+  }
+}
 
 return M

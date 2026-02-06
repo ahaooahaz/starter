@@ -40,9 +40,10 @@ M.ui = {
   }
 }
 M.mason = {
+    cmd = true,
     pkgs = {
         "clangd"
-    }
+    },
 }
 
 return M

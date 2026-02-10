@@ -6,12 +6,14 @@
 local M = {}
 
 M.base46 = {
-	theme = "everblush",
+  theme = "chadracula",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+    CursorLine = { bg = "one_bg" },
+    CursorColumn = { bg = "one_bg" },
+  },
   transparency = true,
 }
 
@@ -26,19 +28,18 @@ M.nvdash = {
     "█  ▄   █  █ █  █       █   ▄   █",
     "█▄█ █▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄▄█ █▄▄█",
     "",
-  }
+  },
 }
 M.ui = {
   tabufline = {
-    lazyload = false
+    lazyload = false,
   },
   cmp = {
     icons = true,
   },
   ststusline = {
     theme = "vscode",
-  }
+  },
 }
 
 return M
-

@@ -1,3 +1,5 @@
+if vim.g.vscode then
+else
 require "nvchad.autocmds"
 vim.api.nvim_create_autocmd("BufReadPost", {
   pattern = "*",
@@ -24,3 +26,4 @@ vim.api.nvim_create_autocmd({"BufEnter", "WinEnter"}, {
         end
     end
 })
+end

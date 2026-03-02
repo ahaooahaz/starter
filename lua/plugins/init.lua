@@ -1,7 +1,7 @@
 return {
     {
         "stevearc/conform.nvim",
-        event = "BufWritePre", -- uncomment for format on save
+        -- event = "BufWritePre", -- uncomment for format on save
         opts = require "configs.conform",
     },
 
@@ -72,4 +72,13 @@ return {
             },
         }
     },
+    {
+        "nvim-tree/nvim-tree.lua",
+        opts = {
+            filters = {
+                dotfiles = false,
+                git_ignored = false
+            }
+        }
+    }
 }

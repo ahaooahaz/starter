@@ -1,3 +1,5 @@
+if vim.g.vscode then
+else
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
@@ -25,9 +27,11 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
+end
 
 require "options"
 require "autocmds"
@@ -35,4 +39,3 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
-

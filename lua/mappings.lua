@@ -1,4 +1,7 @@
-require "nvchad.mappings"
+if vim.g.vscode then
+else
+    require "nvchad.mappings"
+end
 
 -- add yours here
 

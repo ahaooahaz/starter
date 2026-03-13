@@ -1,12 +1,8 @@
 if vim.g.vscode then
 else
-require "nvchad.options"
-
--- add yours here!
-
--- local o = vim.o
--- o.cursorlineopt = "both" -- to enable cursorline!
+    require "nvchad.options"
 end
+
 if vim.env.SSH_CONNECTION then
   vim.g.clipboard = {
     name = "osc52",
@@ -19,4 +15,6 @@ if vim.env.SSH_CONNECTION then
       ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
     },
   }
+else
+    vim.opt.clipboard = "unnamedplus"
 end
